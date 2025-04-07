@@ -33,7 +33,7 @@ body {
 }
 
 .titulo {
-  font-size: 80px;
+  font-size: 55px;
   color: #ffd900;
   font-family: 'games';
   text-align: center;
@@ -83,9 +83,10 @@ body {
 
 p {
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.6;
   font-family: 'Press Start 2P', cursive;
   color: #ffffff;
   text-align: justify;
   text-indent: 30px;
+  
 }
