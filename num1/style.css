@@ -52,10 +52,10 @@ body {
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.511);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.381);
   max-width: 800px;
   width: 100%;
   text-align: center;
@@ -68,7 +68,7 @@ body {
   font-size: 16px;
   background: #FF0000;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
@@ -89,4 +89,64 @@ p {
   text-align: justify;
   text-indent: 30px;
   
+}
+.botao {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  background: #FF0000;
+  color: #ffffff;
+  border: 3px solid #221b1b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.botao:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+.back{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 8px 20px;
+  font-size: 12px;
+  background: #00a7faa7;
+  color: #ffffff;
+  border: 2px solid #ffffffbb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+}
+.back:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+.deck-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.deck-card {
+  text-align: center;
+}
+
+.deck-card img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.deck-card h3 {
+  font-size: 20px;
+  color: #ffd900;
+  font-family: 'games';
+  text-shadow: 2px 2px 4px #000;
 }
