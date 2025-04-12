@@ -68,7 +68,7 @@ body {
   display: block;
   margin: 20px auto;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 24px;
   background: #FF0000;
   color: #fff;
   border: 2px solid #000000;
@@ -88,7 +88,7 @@ body {
 p {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'games', 'Press Start 2P', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
 
   color: #ffffff;
   text-align: justify;
