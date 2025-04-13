@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 
 @font-face {
   font-family: 'poke';
@@ -12,63 +14,79 @@
   src: url('PixelGamer-Regular.otf');
 }
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'games', 'Press Start 2P', sans-serif;
-
   background: linear-gradient(135deg, #1d2b64, #f8cdda);
   color: #fff;
   min-height: 100vh;
   background-image: url(https://wallpapercave.com/wp/wp2603501.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  position: relative;
 }
 
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
 .titulo {
-  font-size: 55px;
+  font-size: 50px;
   color: #ffd900;
   font-family: 'games', 'Press Start 2P', sans-serif;
-
   text-align: center;
   margin-bottom: 30px;
   text-shadow: 2px 2px 4px #000;
 }
+
 
 .titulo2 {
   font-size: 65px;
   color: #ffd900;
   font-family: 'games', 'Press Start 2P', sans-serif;
-
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 4px #000;
-  margin-top: 20px;
 }
 
+
 .container {
-  background: rgba(0, 0, 0, 0.511);
+  background: rgba(0, 0, 0, 0.356);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.381);
-  max-width: 800px;
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
   text-align: center;
 }
 
-.btn {
+.btn-base {
   display: block;
   margin: 20px auto;
-  padding: 15px 30px;
-  font-size: 24px;
+  padding: 15px 20px;
+  font-size: 20px;
   background: #FF0000;
   color: #fff;
   border: 2px solid #000000;
@@ -77,10 +95,11 @@ body {
   transition: all 0.3s;
   text-decoration: none;
   font-family: 'games', 'Press Start 2P', sans-serif;
-
+  width: 220px;
+  text-align: center;
 }
 
-.btn:hover {
+.btn-base:hover {
   background: #cc0000;
   transform: scale(1.05);
 }
@@ -89,33 +108,12 @@ p {
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Press Start 2P', sans-serif;
-
   color: #ffffff;
   text-align: justify;
   text-indent: 30px;
-  
-}
-.botao {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 30px;
-  font-size: 16px;
-  background: #FF0000;
-  color: #ffffff;
-  border: 3px solid #221b1b;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-decoration: none;
-  font-family: 'games', 'Press Start 2P', sans-serif;
-
 }
 
-.botao:hover {
-  background: #cc0000;
-  transform: scale(1.05);
-}
-.back{
+.back {
   position: absolute;
   top: 10px;
   left: 20px;
@@ -129,17 +127,19 @@ p {
   transition: all 0.3s;
   text-decoration: none;
   font-family: 'games', 'Press Start 2P', sans-serif;
-
 }
+
 .back:hover {
   background: #cc0000;
   transform: scale(1.05);
 }
+
 .deck-container {
   display: flex;
   justify-content: center;
   gap: 60px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .deck-card {
@@ -151,12 +151,14 @@ p {
   height: auto;
   margin-bottom: 20px;
 }
+
 .deck-card h3 {
   font-size: 20px;
   color: #ffd900;
   font-family: 'games';
   text-shadow: 2px 2px 4px #000;
 }
+
 @media (max-width: 768px) {
   .deck-container {
     flex-direction: column;
@@ -166,5 +168,20 @@ p {
 
   .deck-card img {
     width: 150px;
+  }
+
+  .titulo, .titulo2 {
+    font-size: 30px;
+  }
+
+  .btn-base {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .container {
+    padding: 20px;
   }
 }
