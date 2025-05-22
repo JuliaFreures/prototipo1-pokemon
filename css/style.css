@@ -159,6 +159,31 @@ p {
   text-shadow: 2px 2px 4px #000;
 }
 
+.pokemon{
+border: 1px solid #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      max-width: 300px;
+      background-color: #232b8dbb;
+    }
+    .pokemon img {
+      max-width: 100%;
+      height: auto;
+    }
+    .pokemon h2 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  color: #ffd900;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+}
+.container-pokemons {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+ max-width: 1000px; 
+  margin: 0 auto;}
 @media (max-width: 768px) {
   .deck-container {
     flex-direction: column;
