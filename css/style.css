@@ -185,6 +185,24 @@ border: 1px solid #ffffff;
  max-width: 1000px; 
   margin: 0 auto;
 }
+.btn-pokemon {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #6cc8ef;
+  color: #ffd900;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+}
+.btn-pokemon.selecionado {
+  background-color: #ff1900; 
+  color: white;
+  border-color: #000000;
+}
 @media (max-width: 768px) {
   .deck-container {
     flex-direction: column;

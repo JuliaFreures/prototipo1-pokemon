@@ -65,7 +65,7 @@ function criarBotoes(deckSeis) {
 }
 
 function resetarSelecao() {
-  const botoes = deckContainer.querySelectorAll("bnt-pokemon");
+  const botoes = deckContainer.querySelectorAll("btn-pokemon");
   botoes.forEach(btn => btn.classList.remove("selecionado"));
 }
 
