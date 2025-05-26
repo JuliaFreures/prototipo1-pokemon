@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
   <title>Batalha Pokémon</title>
-  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <h1 class="titulo">Batalha em andamento</h1>
-  <div id="campo-batalha">
-    <!-- Infos da batalha aqui -->
+
+<header>
+  <h1 class="titulo">Batalha Pokémon</h1>
+  <nav><a href="menu.html" class="back">Voltar ao Menu</a></nav>
+</header>
+
+<div class="batalha-container">
+  <div class="jogador">
+    <h2>Jogador 1</h2>
+    <div id="pokemon-jogador1"></div>
   </div>
 
-  <script src="js/batalha.js"></script>
+  <div class="versus">
+    <h2>VS</h2>
+  </div>
+
+  <div class="jogador">
+    <h2>Jogador 2</h2>
+    <div id="pokemon-jogador2"></div>
+  </div>
+</div>
+
+<button id="atacar" class="btn-base">Atacar!</button>
+
+<div id="resultado"></div>
+
+<script src="js/batalha.js"></script>
 </body>
 </html>
